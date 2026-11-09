@@ -67,12 +67,6 @@ El servidor principal escucha en el puerto `6000`. Envía las consultas alternad
 
 Para las conexiones usé `socket`; para los hilos, `ThreadPoolExecutor`; y para intercambiar información, `json`. También agregué tiempos de espera y mensajes de error sencillos.
 
-## Diagrama del sistema
-
-![Diagrama de arquitectura](diagrama_sistema.png)
-
-**Importante:** este diagrama muestra la **arquitectura propuesta** en la consigna (clientes web/móviles, balanceador Nginx/HAProxy, workers, RabbitMQ, PostgreSQL y S3). En cambio, el código es un **prototipo local más sencillo**: sí utiliza sockets, dos procesos workers y pools de hilos, pero todavía no conecta Nginx, RabbitMQ, PostgreSQL ni S3. El intercambio con los workers se hace directamente por sockets.
-
 ## Pruebas de funcionamiento
 
 ### 1. Inicio de los workers
