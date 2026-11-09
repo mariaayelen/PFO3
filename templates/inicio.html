@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Exploradores de la fauna de Misiones je</title>
+
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='estilo.css') }}">
+
+  <style>
+    header .contenedor {
+      text-align: center;
+    }
+
+    header h1 {
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header p {
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .aviso {
+      text-align: center;
+      line-height: 1.8;
+      padding: 22px;
+      margin: 20px auto 35px;
+    }
+
+    .pregunta-inicial {
+      font-weight: bold;
+      font-size: 1.15rem;
+      margin: 12px 0;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor">
+
+      <span class="etiqueta">
+        CIENCIAS NATURALES · MISIONES
+      </span>
+
+      <h1>Exploradores de la fauna de Misiones</h1>
+
+      <p>
+        Conocemos algunos animales que viven
+        en nuestra provincia.
+      </p>
+
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <div class="aviso">
+
+      <p>
+        En Misiones podemos encontrar muchos animales diferentes.
+        Algunos viven en el monte y otros podemos verlos
+        cerca de nuestras casas.
+      </p>
+
+      <p class="pregunta-inicial">
+        ¿Cuál de estos animales viste alguna vez cerca de tu casa?
+      </p>
+
+      <p>
+        Ahora vamos a conocerlos un poco más.
+        Elegí un animal, leé su ficha y respondé
+        la pregunta de repaso en tu carpeta.
+      </p>
+
+    </div>
+
+    <h2>Elegí un animal</h2>
+
+    <div id="animales" class="grilla" aria-live="polite">
+      <p>Cargando los animales...</p>
+    </div>
+
+    <section id="resultado"
+             class="detalle"
+             aria-live="polite"
+             hidden>
+    </section>
+
+    <footer>
+      PFO3 · Programación sobre Redes
+    </footer>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='pagina.js') }}"></script>
+
+</body>
+</html>
