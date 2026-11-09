@@ -127,19 +127,7 @@ En este trabajo pude ver cómo un servidor recibe solicitudes y las reparte entr
 
 También agregué una página para consultar el diccionario desde Chrome, sin quitar el cliente de consola. La página se comunica con `web.py` (Flask), y este le envía la consulta por socket al **mismo servidor principal** que usa el cliente de consola. De esa manera se siguen usando los dos workers.
 
-Primero instalá Flask (solo una vez):
 
-```powershell
-python -m pip install -r requirements.txt
-```
-
-Iniciá los dos workers y el servidor principal como explico arriba. Después abrí una **quinta terminal** y ejecutá:
-
-```powershell
-python web.py
-```
-
-Abrí en Chrome: **http://127.0.0.1:5000**
 
 Si querés, podés abrir el cliente de consola en otra terminal al mismo tiempo. Las dos formas de consultar usan el mismo servidor principal y los mismos workers.
 
