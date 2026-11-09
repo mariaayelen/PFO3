@@ -26,7 +26,6 @@ El diccionario es pequeño y está pensado como ejemplo escolar, no como una enc
 - `templates/inicio.html`, `static/estilo.css` y `static/pagina.js`: forman la interfaz web.
 - `requirements.txt`: indica la dependencia necesaria para usar la página web.
 - `static/imagenes/`: contiene las imágenes de los animales y las capturas de las pruebas.
-- `diagrama_sistema.png`: arquitectura distribuida propuesta.
 - `actividad_servidor.log`: se genera al iniciar y usar el servidor; registra consultas.
 
 ## Cómo ejecutarlo
