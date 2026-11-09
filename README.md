@@ -2,7 +2,7 @@
 
 ## Introducción
 
-En este tercer trabajo práctico de Programación sobre Redes desarrollé un pequeño diccionario escolar sobre la fauna de Misiones. Elegí esta temática porque se puede usar para trabajar contenidos de Ciencias Naturales en la escuela.
+En este tercer trabajo práctico de Programación sobre Redes desarrollé un pequeño diccionario escolar sobre la fauna de Misiones. Elegí esta temática porque se puede usar para trabajar contenidos de Ciencias Naturales.
 
 La idea fue practicar una forma de comunicación diferente: el cliente envía una consulta al servidor principal y este la reparte entre dos servidores trabajadores (*workers*). Los workers buscan la información y devuelven la respuesta.
 
